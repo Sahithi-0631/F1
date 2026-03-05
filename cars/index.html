@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formula 1 Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO / LANDING SECTION -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+        <h1>🏎️ Feel the Speed of Formula 1</h1>
+        <p>Explore teams, cars, and engineering excellence</p>
+        <button id="enterBtn">GO</button>
+    </div>
+</section>
+
+<!-- MAIN APP -->
+<section class="app hidden" id="app">
+    <header>
+        <h1>Formula 1 Team Explorer</h1>
+        <p>Select a team to reveal its car</p>
+    </header>
+
+    <select id="teamSelect">
+        <option value="">-- Select an F1 Team --</option>
+    </select>
+
+    <div class="container" id="cardContainer"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

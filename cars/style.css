@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000000/content/dam/fom-website/manual/races/Singapore/2008/d08sin1353.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 14px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: #e10600;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    background: #e10600;
+    text-align: center;
+    padding: 20px;
+}
+
+select {
+    display: block;
+    margin: 25px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.95);
+    border-radius: 14px;
+    padding: 25px;
+    max-width: 420px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.card h2 {
+    color: #facc15;
+}
+
+.card p span {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
